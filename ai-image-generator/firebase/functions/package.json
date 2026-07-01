@@ -1,0 +1,33 @@
+{
+  "name": "ai-image-generator-functions",
+  "version": "1.0.0",
+  "description": "Firebase Functions for AI Image Generator",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^4.8.0",
+    "replicate": "^0.25.0",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.0",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/uuid": "^9.0.0",
+    "@types/node-fetch": "^2.6.0",
+    "typescript": "^5.3.0"
+  },
+  "private": true
+}
